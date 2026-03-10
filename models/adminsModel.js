@@ -18,7 +18,7 @@ const AdminsSchema = new Schema({
         type : String,
         required : true,
     },
-    roles : {
+    role : {
         type : String,
         required : true,
     }

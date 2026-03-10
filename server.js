@@ -14,7 +14,8 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.use("/api",require("./routes/authRoutes"))
-
+app.use("/api",require("./routes/categoriesRoutes"))
+app.use("/api",require("./routes/productRoutes"))
 
 
 
@@ -23,6 +24,7 @@ app.use("/api",require("./routes/authRoutes"))
 
 
 dbConnect();
+
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${port}`);
 })
